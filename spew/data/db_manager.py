@@ -2,8 +2,11 @@
 
 
 import sqlite3
+import os
+DIR = os.path.dirname(__file__)
+DIR += '/spew.db'
 
-DB_FILE = "spew.db"
+DB_FILE = DIR
 
 
 # add_login takes a username and password and stores it in the users table
