@@ -7,6 +7,9 @@ from flask import url_for
 from flask import session
 from flask import flash
 # import flask functions
+os.path.dirname(__file__)
+DIR = os.path.dirname(__file__)
+DIR += '/'
 from data import db_manager, db_builder
 # import database functions
 app = Flask(__name__)
