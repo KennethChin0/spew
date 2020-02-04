@@ -3,8 +3,12 @@
 
 
 import sqlite3
+import os
+os.path.dirname(__file__)
+DIR = os.path.dirname(__file__)
+DIR += '/spew.db'
 
-db = sqlite3.connect("spew.db") # open if file exists, otherwise create
+db = sqlite3.connect(DIR) # open if file exists, otherwise create
 c = db.cursor()                 # facilitate db ops
 
 
